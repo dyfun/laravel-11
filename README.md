@@ -109,6 +109,7 @@
 - Docker için starter kit [*](https://github.com/refactorian/laravel-docker) kullanılmıştır.
 - Macos üzerinden Valet [*](https://laravel.com/docs/11.x/valet) ile de kullabilirsiniz.
 - Uygulama "http://localhost" adresinden erişilebilir.
+- Provider verilerini çekmek için "php artisan fetch:tasks" komutunu kullanabilirsiniz.
 
 # 4. Öneri
 Blogumda [*](https://tayfunguler.org/blog) Laravel ile ilgili içerikler bulabilirsiniz.
