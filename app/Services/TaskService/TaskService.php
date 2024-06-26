@@ -10,7 +10,7 @@ class TaskService
 {
     protected int $weeklyHours = 45;
 
-    protected string $namespace = 'App\Services\TaskAssignService\Providers\\';
+    protected string $namespace = 'App\Services\TaskService\Providers\\';
 
     private TaskAbstract $provider;
 
