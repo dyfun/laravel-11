@@ -91,6 +91,16 @@
     php artisan migrate
     php artisan db:seed
     ```
+### 2.3. Docker
+- Docker ile uygulamayı çalıştırmak için:
+    ```shell
+    docker compose up -d --build
+    docker compose exec phpmyadmin chmod 777 /sessions
+    docker compose exec php bash
+    chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
+    chmod -R 775 /var/www/storage /var/www/bootstrap/cache
+    composer setup
+    ```
 
 # 3. Öneri
 Blogumda[*](https://tayfunguler.org/blog) Laravel ile ilgili içerikler bulabilirsiniz.
