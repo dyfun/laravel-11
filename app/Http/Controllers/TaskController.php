@@ -15,7 +15,7 @@ class TaskController extends Controller
     /**
      * Assign task to user
      */
-    public function assignTask(): View
+    public function taskAssignReport(): View
     {
         $data = $this->taskService->assign();
 

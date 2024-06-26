@@ -1,5 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TaskController;
 
-Route::get('/', [\App\Http\Controllers\TaskController::class, 'assignTask']);
+Route::get('/', [TaskController::class, 'taskAssignReport']);
