@@ -25,7 +25,7 @@ class FetchTaskCommand extends Command
     /**
      * Create a new command instance.
      */
-    public function __construct(private TaskService $taskService)
+    public function __construct(private readonly TaskService $taskService)
     {
         parent::__construct();
     }
