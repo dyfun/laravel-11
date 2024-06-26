@@ -1,5 +1,5 @@
 <?php
 
-namespace App\Services\TaskAssignService;
+namespace App\Services\TaskService;
 
 abstract class TaskAbstract implements TaskInterface {}

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services\TaskAssignService\Providers;
+namespace App\Services\TaskService\Providers;
 
 use App\Models\Task;
-use App\Services\TaskAssignService\TaskAbstract;
+use App\Services\TaskService\TaskAbstract;
 use Illuminate\Support\Facades\Http;
 
 class ProviderA extends TaskAbstract

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\TaskAssignService\TaskService;
+use App\Services\TaskService\TaskService;
 use Illuminate\Contracts\View\View;
 
 class TaskController extends Controller

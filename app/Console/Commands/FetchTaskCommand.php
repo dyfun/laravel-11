@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\Provider;
-use App\Services\TaskAssignService\TaskService;
+use App\Services\TaskService\TaskService;
 use Illuminate\Console\Command;
 
 class FetchTaskCommand extends Command
