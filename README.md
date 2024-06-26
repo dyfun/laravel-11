@@ -102,5 +102,10 @@
     composer setup
     ```
 
-# 3. Öneri
-Blogumda[*](https://tayfunguler.org/blog) Laravel ile ilgili içerikler bulabilirsiniz.
+# 3. Not
+- Kod stili formatlamak için pint [*](https://laravel.com/docs/11.x/pint) kullanılmıştır.
+- Docker için starter kit [*](https://github.com/refactorian/laravel-docker) kullanılmıştır.
+- Macos üzerinden Valet [*](https://laravel.com/docs/11.x/valet) ile de kullabilirsiniz.
+
+# 4. Öneri
+Blogumda [*](https://tayfunguler.org/blog) Laravel ile ilgili içerikler bulabilirsiniz.
