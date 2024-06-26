@@ -100,6 +100,8 @@
     chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
     chmod -R 775 /var/www/storage /var/www/bootstrap/cache
     composer setup
+    php artisan migrate
+    php artisan db:seed
     ```
 
 # 3. Not
