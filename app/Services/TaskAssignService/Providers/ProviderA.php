@@ -8,14 +8,8 @@ use Illuminate\Support\Facades\Http;
 
 class ProviderA extends TaskAbstract
 {
-    /**
-     * @var ProviderA
-     */
     private static ProviderA $instance;
 
-    /**
-     * @var string
-     */
     private string $url = 'https://run.mocky.io/v3/9893a87f-9a86-41c9-b21f-5bf4893f6c59';
 
     /**
@@ -23,9 +17,6 @@ class ProviderA extends TaskAbstract
      */
     private function __construct() {}
 
-    /**
-     * @return ProviderA
-     */
     public static function getInstance(): self
     {
         if (empty(self::$instance)) {
@@ -35,9 +26,6 @@ class ProviderA extends TaskAbstract
         return self::$instance;
     }
 
-    /**
-     * @return void
-     */
     public function fetch(): void
     {
         $response = Http::get($this->url);

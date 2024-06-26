@@ -11,6 +11,6 @@ class Provider extends Model
 
     protected $fillable = [
         'name',
-        'class_name'
+        'class_name',
     ];
 }

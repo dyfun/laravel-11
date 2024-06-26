@@ -8,26 +8,14 @@ use App\Models\Task;
 
 class TaskService
 {
-    /**
-     * @var int
-     */
     protected int $weeklyHours = 45;
 
-    /**
-     * @var string
-     */
     protected string $namespace = 'App\Services\TaskAssignService\Providers\\';
 
-    /**
-     * @var TaskAbstract
-     */
     private TaskAbstract $provider;
 
     /**
-     * @param Provider $provider
      * @throws \Exception
-     *
-     * @return void
      */
     public function setProvider(Provider $provider): void
     {
@@ -44,17 +32,11 @@ class TaskService
         $this->provider = $class::getInstance();
     }
 
-    /**
-     * @return void
-     */
     public function fetch(): void
     {
         $this->provider->fetch();
     }
 
-    /**
-     * @return array
-     */
     public function assign(): array
     {
         // Define initial data
@@ -87,7 +69,7 @@ class TaskService
                 'developer' => [
                     'name' => $developer->name,
                     'difficulty' => $developer->difficulty,
-                    'hours' => $developer->hours
+                    'hours' => $developer->hours,
                 ],
                 'remaining_capacity' => $singleDeveloperEffort,
                 'total_time' => 0,

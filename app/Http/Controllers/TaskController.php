@@ -9,15 +9,11 @@ class TaskController extends Controller
 {
     /**
      * TaskController constructor.
-     *
-     * @param TaskService $taskService
      */
     public function __construct(private readonly TaskService $taskService) {}
 
     /**
      * Assign task to user
-     *
-     * @return View
      */
     public function assignTask(): View
     {
